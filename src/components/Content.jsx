@@ -10,12 +10,19 @@ const Content = () => {
   return (
    <div className={`${
     Theme ? "bg-white" : "bg-black"
+
    }
    absolute inset-0 w-full h-full flex items-center justify-center `}>
+    <h1 className={`${
+        Theme ? "text-black" : "text-white"
+    }`}>Hello World</h1>
+    
     <button onClick={changeTheme} className={`${
         Theme ? "text-white bg-black" : "text-black bg-white"
     }
+    
     btn btn-soft btn-secondary btn-xl`}>{Theme ? "Dark" : "Light"}</button>
+
    </div>
   )
 }
